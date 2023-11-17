@@ -1,0 +1,4 @@
+Flask==3.0.0
+Flask-CORS==3.0.10
+RateMyProfessorAPI==1.3.6
+RateMyProfessorPyAPI==1.2.1

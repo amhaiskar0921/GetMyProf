@@ -1,0 +1,89 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#departmentForm, #questionnaireContainer, #resultContainer {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #333;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.question {
+    margin-bottom: 20px;
+}
+
+.question p {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.label-with-circle {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid #4caf50;
+    margin-right: 10px;
+    display: inline-block;
+    background-color: #fff; /* Change to background color as needed */
+}
+
+input[type="radio"] {
+    display: none; /* Hide the default radio button */
+}
+
+input[type="radio"]:checked + .circle {
+    background-color: #4caf50; /* Change to background color as needed */
+    border-color: #4caf50;
+}
+
+/* Add more styles as needed */
