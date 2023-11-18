@@ -1,4 +1,10 @@
-<img width="252" alt="webjam" src="https://github.com/amhaiskar0921/ProfRecs/assets/130187401/0d70346f-7332-4f15-af39-2d5dbfa4ba09">
+dropdown menu
+![webjam2](https://github.com/amhaiskar0921/ProfRecs/assets/130187401/822ac493-0975-484f-9aba-ebf201713dbc)
+
+front menu
+![webjam3](https://github.com/amhaiskar0921/ProfRecs/assets/130187401/ed103501-6e51-4f34-abfb-c4273f9d0f1c)
+result
+![result](https://github.com/amhaiskar0921/ProfRecs/assets/130187401/e587570a-38fc-422e-9f0e-d96726a3ab10)
 
 ## Project Description
 
