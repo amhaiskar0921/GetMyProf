@@ -30,6 +30,6 @@ Dropdown Menu for Department
 
 Homepage
 ![webjam3](https://github.com/amhaiskar0921/ProfRecs/assets/130187401/ed103501-6e51-4f34-abfb-c4273f9d0f1c)
-Results
+Results (from best match to worst match for user preferences)
 ![result](https://github.com/amhaiskar0921/ProfRecs/assets/130187401/e587570a-38fc-422e-9f0e-d96726a3ab10)
 
