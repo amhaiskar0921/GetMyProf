@@ -24,6 +24,7 @@ This project uses the PeterPortal API to fetch the mean GPA and the RateMyProfes
 ## Why is this Useful?
 The project is helpful because it allows users who want to take a class to determine the professor that fits them. This will enable users to spend less time choosing classes as this application takes into account the grade distribution from Zotistics and rates my professor reviews for each professor. 
 
+## Images
 Dropdown Menu for Department
 ![webjam2](https://github.com/amhaiskar0921/ProfRecs/assets/130187401/822ac493-0975-484f-9aba-ebf201713dbc)
 
