@@ -5,6 +5,7 @@ import sorting_ranking
 import PeterPortal_queries as pp
 from RMP_queries import UCI_Prof
 
+
 app = Flask(__name__, template_folder='../Frontend', static_folder='../static')
 CORS(app)
 
@@ -32,13 +33,14 @@ def process_answers():
     # Get professor information based on the answers
     prof_dict = pp.get_all_prof_info_for_given_course(
         START_YEAR, END_YEAR, answers['department'], answers['courseName'])
-    
+    # Process the answers and return the results
+    top_profs = sorting_ranking.get_top_professors(prof_dict, user_answers)
     # Process the answers and return the results
     top_profs = sorting_ranking.get_top_professors(prof_dict, user_answers)
     all_top_prof_info = {}
-
     for prof in top_profs:
         all_top_prof_info[prof[0]] = {}
+        all_top_prof_info[prof[0]]['Name'] = prof[0]
         all_top_prof_info[prof[0]]['Average GPA'] = pp.calculate_mean_gpa(prof_dict, prof[0])
         rmp_prof_obj = UCI_Prof(prof[0][:-1])
         all_top_prof_info[prof[0]]['Average difficulty'] = rmp_prof_obj.get_avg_difficulty()

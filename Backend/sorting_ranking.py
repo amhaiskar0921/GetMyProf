@@ -7,23 +7,28 @@ q3tags = ["caring", "gives good feedback", "clear grading criteria"]
 q4tags = ["gives good feedback", "clear grading criteria", "tough grader", "amazing lectures", "test heavy"]
 
 def map_answers_to_integer_values(int_mapped_ans, str_mapped_ans, question : str, choiceOne: str, choiceTwo: str):
-    if(str_mapped_ans[question] == choiceOne):
+    choiceOne = choiceOne.lower().strip()
+    choiceTwo = choiceOne.lower().strip()
+    print("Question from UI: ", str_mapped_ans[question])
+
+    if(str_mapped_ans[question].lower().strip() == choiceOne):
         int_mapped_ans[question] = -1
-    elif(str_mapped_ans[question] == choiceTwo):
+    elif(str_mapped_ans[question].lower().strip() == choiceTwo):
          int_mapped_ans[question] = 0
     else:
          int_mapped_ans[question] = 1
-    
-             
+
+
 def process_questionnaire_answers(answers):
     # Customize this based on your questionnaire structure
     # This is just a placeholder, you should adapt it to your actual questionnaire structure
     final_answers = {}
     map_answers_to_integer_values(final_answers, answers, "classDiff", '1: Easy', '2: Medium')
     map_answers_to_integer_values(final_answers, answers, "workload", 'Light (ex. 5 assignments for the whole quarter)', 'Medium')
-    map_answers_to_integer_values(final_answers, answers, "likeable", "Don't care how the professor behaves or communicates", "Don't care how the professor behaves or communicates")
+    map_answers_to_integer_values(final_answers, answers, "likeable", "Don't care how the professor behaves or communicates", "Grading communication should be clear")
     map_answers_to_integer_values(final_answers, answers, "learning", "Easy A FTW", "I wanna learn and still get a decent grade")
-    
+    print(final_answers)
+
     user_answers = [
         final_answers['classDiff'],  # Map classDiff to the appropriate value
         final_answers['workload'],   # Map workload to the appropriate value
@@ -59,15 +64,15 @@ def tag_cases(prof_scores: dict, unique_prof_names: set, user_answers: list[int]
     # print(tag_freqs_for_all_profs)
 
     for tag in tags[q_num]:
-        if user_answers[q_num - 1] == 0:
+        if q_num - 1 != 2 and user_answers[q_num - 1] == 0:
             continue
         for name, prof_obj in prof_objects.items():
             tag_freqs_for_this_prof = tag_freqs_for_all_profs[name]  # Use the pre-fetched tag frequencies
             if tag in tag_freqs_for_this_prof:
                 if q_num - 1 == 2:
-                    if user_answers[q_num - 1] == 1:
+                    if user_answers[q_num - 1] == 1:  # we already finished index 0, the first question
                         prof_scores[name] += 2 * tag_freqs_for_this_prof[tag]
-                    elif user_answers[q_num - 1] == 0:
+                    elif user_answers[q_num - 1] == -1:
                         prof_scores[name] += tag_freqs_for_this_prof[tag]
                 else:
                     if user_answers[q_num - 1] == 1:  # we already finished index 0, the first question
@@ -82,7 +87,10 @@ def tag_cases(prof_scores: dict, unique_prof_names: set, user_answers: list[int]
 
 def get_top_professors(all_profs_for_this_course: dict, user_answers: list[bool]):
     unique_prof_names = pp.get_teacher_names(all_profs_for_this_course)
-    prof_scores = defaultdict(float)  # Initialize with float
+    prof_scores = {}
+    for name in unique_prof_names:
+        prof_scores[name] = 0.0
+
     prof_scores = questionOne(prof_scores, all_profs_for_this_course, user_answers[0])
     prof_scores = tag_cases(prof_scores, unique_prof_names, user_answers)
 
