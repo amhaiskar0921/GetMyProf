@@ -1,11 +1,3 @@
-dropdown menu
-![webjam2](https://github.com/amhaiskar0921/ProfRecs/assets/130187401/822ac493-0975-484f-9aba-ebf201713dbc)
-
-front menu
-![webjam3](https://github.com/amhaiskar0921/ProfRecs/assets/130187401/ed103501-6e51-4f34-abfb-c4273f9d0f1c)
-result
-![result](https://github.com/amhaiskar0921/ProfRecs/assets/130187401/e587570a-38fc-422e-9f0e-d96726a3ab10)
-
 ## Project Description
 
 GetMyProf is a web application that determines the best professors for a class the user wants to take for future quarters. The professors that can be chosen are based on whether they taught the course two years ago. 
@@ -31,3 +23,12 @@ This project uses the PeterPortal API to fetch the mean GPA and the RateMyProfes
 
 ## Why is this Useful?
 The project is helpful because it allows users who want to take a class to determine the professor that fits them. This will enable users to spend less time choosing classes as this application takes into account the grade distribution from Zotistics and rates my professor reviews for each professor. 
+
+Dropdown Menu for Department
+![webjam2](https://github.com/amhaiskar0921/ProfRecs/assets/130187401/822ac493-0975-484f-9aba-ebf201713dbc)
+
+Homepage
+![webjam3](https://github.com/amhaiskar0921/ProfRecs/assets/130187401/ed103501-6e51-4f34-abfb-c4273f9d0f1c)
+Results
+![result](https://github.com/amhaiskar0921/ProfRecs/assets/130187401/e587570a-38fc-422e-9f0e-d96726a3ab10)
+
