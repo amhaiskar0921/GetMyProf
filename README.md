@@ -23,5 +23,5 @@ After the user answers the questionnaire and the class they want to take, the we
 ## Structure of this Web Application
 This project uses the PeterPortal API to fetch the mean GPA and the RateMyProfessor API to fetch the reviews of the professor's attributes like top 5 tags of the professors, rating of the professor, and retake rate. With our Python backend, we call these APIs to fetch the data and determine the scores for each professor to determine the best professors for the user. In the front end, we use HTML to provide the web page structure of the questionnaire and how the user can pick the class and CSS to add more styling to our website. To connect the front end and the back end, we use Flask to achieve this. 
 
-## Why is this is Useful?
+## Why is this Useful?
 The project is helpful because it allows users who want to take a class to determine the professor that fits them. This will enable users to spend less time choosing classes as this application takes into account the grade distribution from Zotistics and rates my professor reviews for each professor. 
