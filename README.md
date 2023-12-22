@@ -26,7 +26,7 @@ The project is helpful because it allows users who want to take a class to deter
 
 ## Images
 Dropdown Menu for Department
-![webjam2](<img width="1512" alt="image" src="https://github.com/amhaiskar0921/ProfRepoFinal/assets/43621944/947c0713-683a-44f8-b84f-7adee12ccc8d">)
+![webjam2](amhaiskar0921/ProfRepoFinal/assets/43621944/947c0713-683a-44f8-b84f-7adee12ccc8d)
 
 Homepage
 ![webjam3](<img width="344" alt="image" src="https://github.com/amhaiskar0921/ProfRepoFinal/assets/43621944/a586c086-a024-44d6-a39c-df5d5a93cb24">)
