@@ -25,11 +25,13 @@ This project uses the PeterPortal API to fetch the mean GPA and the RateMyProfes
 The project is helpful because it allows users who want to take a class to determine the professor that fits them. This will enable users to spend less time choosing classes as this application takes into account the grade distribution from Zotistics and rates my professor reviews for each professor. 
 
 ## Images
-Dropdown Menu for Department
-![webjam2](amhaiskar0921/ProfRepoFinal/assets/43621944/947c0713-683a-44f8-b84f-7adee12ccc8d)
+### Dropdown Menu for Department:
+<img width="1514" alt="Departments" src="https://github.com/amhaiskar0921/ProfRepoFinal/assets/43621944/947c0713-683a-44f8-b84f-7adee12ccc8d">
 
-Homepage
-![webjam3](<img width="344" alt="image" src="https://github.com/amhaiskar0921/ProfRepoFinal/assets/43621944/a586c086-a024-44d6-a39c-df5d5a93cb24">)
-Results (from best match to worst match for user preferences)
-![result](https://github.com/amhaiskar0921/ProfRecs/assets/130187401/e587570a-38fc-422e-9f0e-d96726a3ab10)
+### Homepage:
+<img width="344" alt="Homepage" src="https://github.com/amhaiskar0921/ProfRepoFinal/assets/43621944/a586c086-a024-44d6-a39c-df5d5a93cb24">
+
+### Results (from best match to worst match for user preferences): 
+<img width="987" alt="image" src="https://github.com/amhaiskar0921/ProfRepoFinal/assets/43621944/511d410d-d97c-482f-a21b-0ee0aadc1395">
+
 
