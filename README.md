@@ -26,10 +26,10 @@ The project is helpful because it allows users who want to take a class to deter
 
 ## Images
 Dropdown Menu for Department
-![webjam2](https://github.com/amhaiskar0921/ProfRecs/assets/130187401/822ac493-0975-484f-9aba-ebf201713dbc)
+![webjam2](<img width="1512" alt="image" src="https://github.com/amhaiskar0921/ProfRepoFinal/assets/43621944/947c0713-683a-44f8-b84f-7adee12ccc8d">)
 
 Homepage
-![webjam3](https://github.com/amhaiskar0921/ProfRecs/assets/130187401/ed103501-6e51-4f34-abfb-c4273f9d0f1c)
+![webjam3](<img width="344" alt="image" src="https://github.com/amhaiskar0921/ProfRepoFinal/assets/43621944/a586c086-a024-44d6-a39c-df5d5a93cb24">)
 Results (from best match to worst match for user preferences)
 ![result](https://github.com/amhaiskar0921/ProfRecs/assets/130187401/e587570a-38fc-422e-9f0e-d96726a3ab10)
 
